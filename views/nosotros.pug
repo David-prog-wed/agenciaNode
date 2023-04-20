@@ -1,0 +1,32 @@
+//- esta es la forma de pasar variables a pug o tambien se con el =pagina
+extends ./layout/index
+
+block contenido
+  main.container.mt-5
+    .row
+      .col-md-5 
+        img(src="/img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+      .col-md-7
+        h1 #{pagina} 
+        blockquote  dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dolor et odio blandit pharetra. Ut ornare pulvinar consequat. Donec ac rhoncus eros, et interdum libero. Integer hendrerit ipsum at dui pretium maximus. Curabitur bibendum, sem vel convallis aliquet, ligula nibh placerat elit, vitae consectetur orci dui quis sem. Ut et enim non nulla bibendum ornare. 
+
+        p lobortis neque vel ipsum ultrices, eget vehicula orci molestie. Duis id orci ut augue pulvinar porta ut et dui. Nunc a ligula ac dui interdum dignissim. Nullam in magna ac ex ultrices tempus eget cursus turpis. Curabitur hendrerit, ex porttitor gravida 
+
+        p vitae nunc tempor velit imperdiet tincidunt et a est. Etiam mauris nunc, suscipit a elit vitae, accumsan tincidunt orci. Sed sagittis nibh eu augue accumsan, euismod suscipit magna elementum. Vivamus velit ex, dignissim vel justo eget, tempor feugiat 
+  .listado-iconos 
+    .container.mt-5.py-5.text-center 
+      .row 
+        .col-md-4 
+          img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4") 
+          h2.mb-4 Seguridad 
+          p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dolor et odio blandit pharetra. Ut ornare pulvinar consequat. Donec ac rhoncus eros, et interdum libero.
+
+        .col-md-4    
+          img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4") 
+          h2.mb-4 Mejores Destinos 
+          p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dolor et odio blandit pharetra. Ut ornare pulvinar consequat. Donec ac rhoncus eros, et interdum libero.
+
+        .col-md-4 
+          img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4") 
+          h2.mb-4 Los Mejores Precios 
+          p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dolor et odio blandit pharetra. Ut ornare pulvinar consequat. Donec ac rhoncus eros, et interdum libero.
