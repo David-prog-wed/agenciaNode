@@ -23,7 +23,6 @@ h3 {
 .centrado{
     display:flex;
     justify-content: center;
-    align-items: center;
 }
 
 .btn-success {
@@ -105,6 +104,10 @@ footer .nav a,
     height: 100px;
 }
 
+.p2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .descuento {
     height: 400px;
