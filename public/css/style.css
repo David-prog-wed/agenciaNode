@@ -20,6 +20,13 @@ h3 {
     font-size: 3rem;
 }
 
+.centrado{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .btn-success {
     background-color: #DC135F;
     border-color: #DC135F;
