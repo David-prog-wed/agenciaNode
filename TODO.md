@@ -1,7 +1,9 @@
-# TODO - Arreglo de ejecución y pruebas
+# TODO - Arreglo de imágenes y letras (acentos)
 
-- [x] Actualizar `package.json` para incluir script `test` compatible con ESM + Jest
-- [x] Ajustar `jest.config.js` para ejecución ESM sin transformaciones innecesarias
-- [x] Ejecutar pruebas (`npm test`) y revisar fallos
-- [x] Corregir fallos adicionales detectados por pruebas (si existen)
-- [x] Validar que la app siga levantando correctamente
+- [x] Revisar y corregir rutas de imágenes en vistas
+  - [x] Corregir rutas relativas `img/...` a absolutas `/img/...` en `views/nosotros.pug`
+- [x] Corregir textos con acentos en vistas
+  - [x] Cambiar `Dolares` por `Dólares` en `views/viaje.pug`
+- [x] Mejorar normalización de caracteres mal codificados en controlador
+  - [x] Ampliar `arreglarTexto` en `controllers/paginasControllers.js`
+- [x] Verificación final de referencias de imágenes y texto

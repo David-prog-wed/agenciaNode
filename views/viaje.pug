@@ -4,7 +4,8 @@ block contenido
   main.container.mt-5
     .row
       .col-md-5 
-        img(src=`/img/destinos_${viaje.imagen}_ln.jpg`, alt="imagen sobre nosotros", class="img-fluid")
+        - const imagenDetalle = viaje.imagen ? viaje.imagen.replace('.jpg', '_ln.jpg') : ''
+        img(src=`/img/${imagenDetalle}`, alt="imagen sobre nosotros", class="img-fluid")
       .col-md-7
         h1 #{viaje.titulo}
         p
@@ -25,7 +26,7 @@ block contenido
             path(d='M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1')
             path(d='M12 6v2m0 8v2')
 
-          | #{viaje.precio} Dolares
+          | #{viaje.precio} Dólares
         p
           svg.icon.icon-tabler.icon-tabler-users(xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewbox='0 0 24 24' stroke-width='1.5' stroke='#dc135f' fill='none' stroke-linecap='round' stroke-linejoin='round')
             path(stroke='none' d='M0 0h24v24H0z' fill='none')
