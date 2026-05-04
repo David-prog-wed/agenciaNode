@@ -1,7 +1,16 @@
-# TODO - Arreglo de ejecución y pruebas
+# TODO - Estabilización app Agencia Viajes
 
-- [x] Actualizar `package.json` para incluir script `test` compatible con ESM + Jest
-- [x] Ajustar `jest.config.js` para ejecución ESM sin transformaciones innecesarias
-- [x] Ejecutar pruebas (`npm test`) y revisar fallos
-- [x] Corregir fallos adicionales detectados por pruebas (si existen)
-- [x] Validar que la app siga levantando correctamente
+- [x] Revisar configuración actual de conexión DB (`config/db.js` y `.env`)
+- [x] Crear `.env` local base para MySQL
+- [x] Ajustar `config/db.js` con valores por defecto seguros
+
+## Plan aprobado: DB completa con Docker + vistas
+
+- [ ] Crear `docker-compose.yml` para MySQL 8
+- [ ] Levantar contenedor MySQL
+- [ ] Inicializar schema/tablas (`viajes`, `testimoniales`) y datos semilla
+- [ ] Verificar conexión Sequelize (`DB Conectada`)
+- [ ] Validar rutas de vistas: `/`, `/viajes`, `/viajes/:slug`, `/testimoniales`
+- [ ] Validar envío de formulario `POST /testimoniales`
+- [ ] Ejecutar `npm test`
+- [ ] Dejar resumen final de estado

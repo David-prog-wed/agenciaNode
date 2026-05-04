@@ -1,16 +1,14 @@
-import Sequelize from 'sequelize';
-import dotenv from 'dotenv/config';
-
-console.log(process.env.DB_HOST);
+import Sequelize from "sequelize";
+import dotenv from "dotenv/config";
 
 const db = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASS,
+  process.env.DB_NAME || "agenciaviajes",
+  process.env.DB_USER || "root",
+  process.env.DB_PASS || "root",
   {
-    host: process.env.DB_HOST,
-    port: '3306',
-    dialect: 'mysql',
+    host: process.env.DB_HOST || "127.0.0.1",
+    port: process.env.DB_PORT || "3306",
+    dialect: "mysql",
     define: {
       timestamps: false,
     },
@@ -20,8 +18,7 @@ const db = new Sequelize(
       acquire: 30000,
       idle: 10000,
     },
-    // operatorsAliases: false,
-  }
+  },
 );
 
 export default db;
